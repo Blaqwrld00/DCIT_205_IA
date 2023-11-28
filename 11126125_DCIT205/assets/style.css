@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0 px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    /* background-color: #f2f2f22e; */
+    background: linear-gradient(to right, #6b034a 0%, #f18e8e 100%);
+
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  background-color: #a00c0c;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.move a{
+    /* display: flex; */
+   text-decoration: none;
+    width:auto;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 20px;
+    color: #000;
+}
+ul li {
+ display: inline-block;
+ margin-right: 10px; /* optional space between list items */
+}
+.move a::after {
+    content:'' ;
+    width: 20px;
+    height: 5px;
+    background: #abf925;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.move a:hover{
+    font-weight: 700;
+}
+.move a:hover::after{
+    display:inline-block;
+}
+.heading{
+      width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+.heading h1{
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 15px;
+    position: relative;
+}
+.heading h1::after{
+    content: '';
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: aqua;
+    position: absolute;
+}
+.heading p{
+    font-size: 35px;
+    color: #000000;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+
+    header {
+      background-color: #333;
+      color: rgba(255, 255, 255, 0.263);
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+
+    .section h2 {
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      background-color: #333333;
+      color: rgb(233, 21, 21);
+      padding: 20px;
+      text-align: center;
+    }
+footer {
+    background-color:rgb(78, 45, 157);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+

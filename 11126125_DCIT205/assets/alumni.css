@@ -1,0 +1,100 @@
+ body {
+ margin: 0px;
+    padding: 0 px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+     background: linear-gradient(to right, #6b034a 0%, #000000 100%);
+
+}    
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    background-color: #6b034a;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .move a{
+    /* display: flex; */
+   text-decoration: none;
+    width:auto;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 20px;
+    color: #000;
+}
+ul li {
+ display: inline-block;
+ margin-right: 10px; /* optional space between list items */
+}
+.move a::after {
+    content:'' ;
+    width: 20px;
+    height: 5px;
+    background: #f92537;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.move a:hover{
+    font-weight: 700;
+}
+.move a:hover::after{
+    display:inline-block;
+}
+    .content{
+        margin: 0 auto;
+        padding: 20px 30px;
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    background-color: #6b034a;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+       
+
+    .alumni-card {
+      width: 300px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      margin: 20px;
+      box-shadow: 0 0 10px #ddd;
+    }
+
+    .alumni-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+    }
+
+    .alumni-card h2 {
+      margin: 10px 0;
+    }
+
+    .alumni-card p {
+      margin: 10px 0;
+    }
+
+    .alumni-card a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    .alumni-card a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+    background-color:aquamarine;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+

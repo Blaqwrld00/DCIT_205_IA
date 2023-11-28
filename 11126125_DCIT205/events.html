@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CS Events Hub</title>
+    <link rel="stylesheet" href="assets/events.css" type="text/css" />
+  </head>
+
+  <body>
+    <div class="nav">
+      <ul class="move">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="faculty.html">Faculty</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="alumni.html">Alumni</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="header">
+        <h1>CS Events Hub</h1>
+      </div>
+
+      <div class="events-container">
+        <!-- Event cards will be loaded here -->
+      </div>
+
+      <button class="load-more-btn">Load More Events</button>
+    </div>
+
+    <div class="inf">
+      <h2>UP Comming events Soon..!!!</h2>
+    </div>
+
+    <script>
+      // Load events data
+      let eventsData = [];
+
+      // Load events into the DOM
+      function loadEvents(events) {
+        const eventsContainer = document.querySelector(".events-container");
+        events.forEach((event) => {
+          const eventCard = document.createElement("div");
+          eventCard.classList.add("event-card");
+          eventCard.innerHTML = `
+                    <h2>${event.title}</h2>
+                    <p>${event.date}</p>
+                    <p>${event.location}</p>
+                `;
+          eventsContainer.appendChild(eventCard);
+        });
+      }
+
+      // Load initial set of events
+      loadEvents(eventsData.slice(0, 10));
+
+      // Add event listener for the 'Load More Events' button
+      document.querySelector(".load-more-btn").addEventListener("click", () => {
+        // Load and display the next set of events
+        loadEvents(eventsData.slice(10, 20));
+      });
+    </script>
+
+    <footer>
+      <h4>Computer Science Department</h4>
+    </footer>
+  </body>
+</html>
